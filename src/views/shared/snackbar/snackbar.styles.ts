@@ -5,7 +5,7 @@ import { Theme } from "src/styles/theme";
 export const useSnackbarStyles = createUseStyles((theme: Theme) => ({
   closeButton: {
     "&:hover": {
-      background: theme.palette.grey.veryDark,
+      background: theme.palette.secondary.dark,
     },
     backgroundColor: "transparent",
     border: "none",
@@ -38,9 +38,9 @@ export const useSnackbarStyles = createUseStyles((theme: Theme) => ({
   },
   reportButton: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.dark,
+      backgroundColor: theme.palette.secondary.dark,
     },
-    backgroundColor: theme.palette.grey.veryDark,
+    backgroundColor: theme.palette.secondary.dark,
     border: 0,
     borderRadius: 12,
     color: theme.palette.white,
@@ -58,6 +58,7 @@ export const useSnackbarStyles = createUseStyles((theme: Theme) => ({
   wrapper: {
     alignItems: "center",
     background: theme.palette.black,
+    border: "1px solid " + theme.palette.secondary.light,
     borderRadius: 16,
     display: "flex",
     justifyContent: "center",

@@ -10,15 +10,15 @@ export const theme = {
       light: "rgba(232,67,12,0.1)",
       main: "#e8430d",
     },
-    grey: {
-      dark: "#78798d",
-      light: "#f0f1f6",
-      main: "#e2e5ee",
-      veryDark: "#363740",
-    },
     primary: {
-      dark: "#5a1cc3",
-      main: "#7b3fe4",
+      dark: "#8dbc1a",
+      main: "#c9fe36",
+    },
+    secondary: {
+      dark: "#0C0E12",
+      light: "#292d32",
+      main: "#171916",
+      veryLight: "#4d4d4d",
     },
     success: {
       light: "rgba(0,255,0,0.1)",

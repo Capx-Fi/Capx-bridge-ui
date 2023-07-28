@@ -10,7 +10,8 @@ export const useHomeStyles = createUseStyles((theme: Theme) => ({
   },
   ethereumAddress: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.main,
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     borderRadius: 56,
     display: "flex",
     margin: [theme.spacing(3), "auto", theme.spacing(3)],

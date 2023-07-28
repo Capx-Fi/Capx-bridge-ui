@@ -5,10 +5,10 @@ import { Theme } from "src/styles/theme";
 export const useTokenSelectorHeaderStyles = createUseStyles((theme: Theme) => ({
   backButton: {
     "&:hover": {
-      background: theme.palette.grey.main,
+      background: theme.palette.secondary.main,
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.secondary.light,
     border: 0,
     borderRadius: "50%",
     cursor: "pointer",
@@ -27,10 +27,10 @@ export const useTokenSelectorHeaderStyles = createUseStyles((theme: Theme) => ({
   },
   closeButton: {
     "&:hover": {
-      background: theme.palette.grey.main,
+      background: theme.palette.secondary.veryLight,
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.secondary.light,
     border: 0,
     borderRadius: "50%",
     cursor: "pointer",

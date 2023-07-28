@@ -4,7 +4,11 @@ import { Theme } from "src/styles/theme";
 
 export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
   arrowDownIcon: {
-    backgroundColor: theme.palette.grey.main,
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+    },
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     borderRadius: "50%",
     display: "flex",
     [theme.breakpoints.upSm]: {
@@ -37,7 +41,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
   },
   fromChain: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.light,
+      backgroundColor: theme.palette.secondary.light,
     },
     alignItems: "center",
     background: "none",
@@ -70,7 +74,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     justifyContent: "space-between",
   },
   middleRow: {
-    borderTop: `1px solid ${theme.palette.grey.light}`,
+    borderTop: `1px solid ${theme.palette.secondary.light}`,
     marginTop: theme.spacing(1.25),
     padding: [theme.spacing(2), 0, 0],
   },
@@ -106,11 +110,11 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
   },
   tokenSelector: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.light,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
-    border: "none",
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     borderRadius: 8,
     cursor: "pointer",
     display: "flex",
@@ -118,7 +122,7 @@ export const useBridgeFormStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(1), theme.spacing(1.25)],
     transition: theme.hoverTransition,
     [theme.breakpoints.upSm]: {
-      backgroundColor: theme.palette.grey.light,
+      backgroundColor: theme.palette.secondary.main,
       gap: theme.spacing(2),
       padding: [theme.spacing(1.5), theme.spacing(2)],
     },

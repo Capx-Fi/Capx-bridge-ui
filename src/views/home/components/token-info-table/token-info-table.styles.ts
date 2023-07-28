@@ -10,7 +10,7 @@ export const useTokenInfoTableStyles = createUseStyles((theme: Theme) => ({
   },
   button: {
     "&:hover": {
-      background: theme.palette.grey.main,
+      background: theme.palette.secondary.main,
     },
     background: "transparent",
     border: "none",
@@ -25,15 +25,15 @@ export const useTokenInfoTableStyles = createUseStyles((theme: Theme) => ({
   },
   copyIcon: {
     "& path": {
-      fill: theme.palette.grey.dark,
+      fill: theme.palette.secondary.dark,
     },
     height: 16,
     width: 16,
   },
   newWindowIcon: {
     "& path": {
-      fill: theme.palette.grey.dark,
-      stroke: theme.palette.grey.dark,
+      fill: theme.palette.secondary.dark,
+      stroke: theme.palette.secondary.dark,
       strokeWidth: 1,
     },
     height: 16,

@@ -5,7 +5,8 @@ import { Theme } from "src/styles/theme";
 export const useTokenSelectorStyles = createUseStyles((theme: Theme) => ({
   background: {
     alignItems: "center",
-    background: theme.palette.transparency,
+    backdropFilter: "blur(3px)",
+    background: "rgba(10,11,13, 0.07)",
     display: "flex",
     height: "100vh",
     justifyContent: "center",

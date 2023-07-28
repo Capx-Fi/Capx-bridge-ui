@@ -5,7 +5,8 @@ import { Theme } from "src/styles/theme";
 export const useListStyles = createUseStyles((theme: Theme) => ({
   background: {
     alignItems: "center",
-    background: theme.palette.transparency,
+    backdropFilter: "blur(3px)",
+    background: "rgba(10,11,13, 0.07)",
     display: "flex",
     height: "100vh",
     justifyContent: "center",
@@ -14,14 +15,14 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
   },
   button: {
     "&:hover": {
-      background: theme.palette.grey.main,
+      background: theme.palette.secondary.light,
     },
     "&:not(:first-of-type)": {
       marginTop: theme.spacing(1),
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
-    border: "none",
+    background: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     borderRadius: 8,
     cursor: "pointer",
     display: "flex",
@@ -30,16 +31,18 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
     transition: theme.hoverTransition,
   },
   card: {
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     maxWidth: 426,
     padding: theme.spacing(2),
     width: "100%",
   },
   closeButton: {
     "&:hover": {
-      background: theme.palette.grey.main,
+      background: theme.palette.secondary.veryLight,
     },
     alignItems: "center",
-    background: theme.palette.grey.light,
+    background: theme.palette.secondary.light,
     border: 0,
     borderRadius: "50%",
     cursor: "pointer",
@@ -73,10 +76,10 @@ export const useListStyles = createUseStyles((theme: Theme) => ({
       width: "4px",
     },
     "&::-webkit-scrollbar-thumb": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.main,
     },
     "&::-webkit-scrollbar-thumb:hover": {
-      backgroundColor: theme.palette.grey.dark,
+      backgroundColor: theme.palette.secondary.dark,
     },
     display: "flex",
     flexDirection: "column",

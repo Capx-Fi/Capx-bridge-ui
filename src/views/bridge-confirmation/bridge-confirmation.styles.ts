@@ -36,7 +36,7 @@ export const useBridgeConfirmationStyles = createUseStyles((theme: Theme) => ({
   },
   chainBox: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     borderRadius: 56,
     display: "flex",
     flex: 1,
@@ -52,7 +52,7 @@ export const useBridgeConfirmationStyles = createUseStyles((theme: Theme) => ({
   },
   chainsRow: {
     alignItems: "center",
-    borderBottom: `1px solid ${theme.palette.grey.light}`,
+    borderBottom: `1px solid ${theme.palette.secondary.light}`,
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",

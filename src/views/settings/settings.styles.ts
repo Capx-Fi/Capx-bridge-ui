@@ -31,10 +31,10 @@ export const useSettingsStyles = createUseStyles((theme: Theme) => ({
   },
   currencyBox: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.main,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     border: `1px solid ${theme.palette.white}`,
     borderRadius: 8,
     cursor: "pointer",

@@ -5,7 +5,8 @@ import { Theme } from "src/styles/theme";
 export const useConfirmationModalStyles = createUseStyles((theme: Theme) => ({
   background: {
     alignItems: "center",
-    background: theme.palette.transparency,
+    backdropFilter: "blur(3px)",
+    backgroundColor: `rgba(10,11,13, 0.07)`,
     display: "flex",
     height: "100vh",
     justifyContent: "center",
@@ -20,13 +21,15 @@ export const useConfirmationModalStyles = createUseStyles((theme: Theme) => ({
     },
     background: "transparent",
     border: 0,
-    color: theme.palette.grey.dark,
+    color: theme.palette.secondary.dark,
     cursor: "pointer",
     margin: [theme.spacing(1), "auto", theme.spacing(-1), "auto"],
     padding: theme.spacing(1),
     transition: theme.hoverTransition,
   },
   card: {
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
     display: "flex",
     flexDirection: "column",
     marginLeft: theme.spacing(1),
@@ -47,6 +50,7 @@ export const useConfirmationModalStyles = createUseStyles((theme: Theme) => ({
     margin: [theme.spacing(3), 0, [theme.spacing(4)]],
   },
   title: {
+    color: theme.palette.white + " !importent",
     textAlign: "center",
   },
 }));

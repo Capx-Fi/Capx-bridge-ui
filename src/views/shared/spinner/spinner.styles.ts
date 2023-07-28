@@ -12,7 +12,7 @@ export const useSpinnerStyles = createUseStyles((theme: Theme) => ({
     from: { transform: "rotate(0deg)" },
     to: { transform: "rotate(360deg)" },
   },
-  bottomCircle: ({ color = theme.palette.grey.dark }: StyleProps) => ({
+  bottomCircle: ({ color = theme.palette.secondary.dark }: StyleProps) => ({
     stroke: color,
     strokeOpacity: 0.2,
   }),
@@ -24,7 +24,7 @@ export const useSpinnerStyles = createUseStyles((theme: Theme) => ({
   svg: {
     animation: "$spin 0.8s linear infinite",
   },
-  topCircle: ({ color = theme.palette.grey.dark }: StyleProps) => ({
+  topCircle: ({ color = theme.palette.secondary.dark }: StyleProps) => ({
     stroke: color,
     strokeDasharray: "30px 200px",
     strokeDashoffset: "0px",

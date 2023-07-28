@@ -19,14 +19,14 @@ export const useTokenAdderStyles = createUseStyles((theme: Theme) => ({
   },
   disclaimerBox: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     borderRadius: 8,
     display: "flex",
     marginTop: theme.spacing(2),
     padding: theme.spacing(2),
   },
   disclaimerBoxMessage: {
-    color: theme.palette.grey.dark,
+    color: theme.palette.secondary.dark,
   },
   disclaimerBoxWarningIcon: {
     marginRight: theme.spacing(1),

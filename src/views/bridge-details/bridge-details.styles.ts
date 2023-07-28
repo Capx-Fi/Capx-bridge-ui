@@ -10,7 +10,7 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
   },
   balance: {
     alignItems: "center",
-    borderBottom: `1px solid ${theme.palette.grey.light}`,
+    borderBottom: `1px solid ${theme.palette.secondary.light}`,
     display: "flex",
     flexDirection: "column",
     gap: theme.spacing(1),
@@ -47,10 +47,10 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
   },
   explorerButton: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.main,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     border: "none",
     borderRadius: 8,
     cursor: "pointer",
@@ -59,7 +59,7 @@ export const useBridgeDetailsStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(1), theme.spacing(2)],
   },
   fiat: {
-    color: theme.palette.grey.dark,
+    color: theme.palette.secondary.dark,
     fontSize: 14,
   },
   finaliseRow: {

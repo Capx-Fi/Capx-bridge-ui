@@ -4,7 +4,7 @@ import { Theme } from "src/styles/theme";
 
 export const useLoginStyles = createUseStyles((theme: Theme) => ({
   appName: {
-    background: theme.palette.grey.main,
+    background: theme.palette.secondary.main,
     borderRadius: 56,
     margin: "0px auto",
     marginBottom: theme.spacing(5),

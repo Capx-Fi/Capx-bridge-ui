@@ -10,7 +10,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
   },
   bottom: {
     alignItems: "center",
-    borderTop: [1, "solid", theme.palette.grey.light],
+    borderTop: [1, "solid", theme.palette.secondary.light],
     display: "flex",
     justifyContent: "space-between",
     marginTop: theme.spacing(2),
@@ -18,7 +18,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
   },
   card: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.main,
     },
     cursor: "pointer",
     margin: "auto",
@@ -28,7 +28,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
   },
   circle: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     borderRadius: "100%",
     display: "flex",
     height: theme.spacing(6),
@@ -36,12 +36,12 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     width: theme.spacing(6),
   },
   fiat: {
-    color: theme.palette.grey.dark,
+    color: theme.palette.secondary.dark,
     fontSize: 14,
   },
   finaliseButton: {
     "&:disabled": {
-      backgroundColor: theme.palette.grey.dark,
+      backgroundColor: theme.palette.secondary.dark,
       cursor: "initial",
       opacity: 0.4,
     },
@@ -94,7 +94,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(0.5), theme.spacing(1)],
   },
   steps: {
-    color: theme.palette.grey.dark,
+    color: theme.palette.secondary.dark,
     fontSize: 14,
     marginBottom: theme.spacing(2),
     marginTop: 0,

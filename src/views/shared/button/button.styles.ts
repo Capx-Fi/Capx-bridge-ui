@@ -5,7 +5,8 @@ import { Theme } from "src/styles/theme";
 export const useButtonStyles = createUseStyles((theme: Theme) => ({
   button: {
     "&:disabled": {
-      backgroundColor: theme.palette.grey.dark,
+      backgroundColor: theme.palette.secondary.veryLight,
+      color: theme.palette.white,
       cursor: "default",
       opacity: 0.4,
     },
@@ -16,7 +17,7 @@ export const useButtonStyles = createUseStyles((theme: Theme) => ({
     backgroundColor: theme.palette.primary.main,
     border: "none",
     borderRadius: 80,
-    color: theme.palette.white,
+    color: theme.palette.secondary.dark,
     cursor: "pointer",
     display: "flex",
     fontSize: "20px",

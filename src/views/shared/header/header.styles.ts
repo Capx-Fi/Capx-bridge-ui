@@ -42,10 +42,10 @@ export const useHeaderStyles = createUseStyles((theme: Theme) => ({
   },
   sideButton: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.light,
     },
     alignItems: "center",
-    backgroundColor: theme.palette.white,
+
     borderRadius: 50,
     cursor: "pointer ",
     display: "flex",

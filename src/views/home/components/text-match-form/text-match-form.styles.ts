@@ -30,7 +30,7 @@ export const useTextMatchFormStyles = createUseStyles((theme: Theme) => ({
       borderColor: theme.palette.black,
     },
     appearance: "none",
-    borderColor: theme.palette.grey.dark,
+    borderColor: theme.palette.secondary.dark,
     borderRadius: 8,
     borderStyle: "solid",
     fontSize: 18,

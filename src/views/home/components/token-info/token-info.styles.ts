@@ -5,9 +5,9 @@ import { Theme } from "src/styles/theme";
 export const useTokenInfoStyles = createUseStyles((theme: Theme) => ({
   removeTokenButton: {
     "&:hover": {
-      backgroundColor: theme.palette.grey.main,
+      backgroundColor: theme.palette.secondary.main,
     },
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
     border: "none",
     borderRadius: 9,
     color: theme.palette.black,

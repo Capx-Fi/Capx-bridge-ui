@@ -16,6 +16,7 @@ export const useActivityStyles = createUseStyles((theme: Theme) => ({
   },
   emptyMessage: {
     alignSelf: "center",
+    color: theme.palette.white,
     maxWidth: theme.maxWidth,
     padding: [50, theme.spacing(2)],
     textAlign: "center",
@@ -46,26 +47,27 @@ export const useActivityStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(0), theme.spacing(1)],
   },
   filterBoxSelected: {
-    backgroundColor: theme.palette.white,
-    color: theme.palette.grey.dark,
+    backgroundColor: theme.palette.secondary.main,
+    border: "1px solid " + theme.palette.secondary.light,
+    color: theme.palette.white,
   },
   filterNumberBox: {
     alignItems: "center",
-    backgroundColor: theme.palette.grey.main,
+    backgroundColor: theme.palette.secondary.light,
     borderRadius: 6,
     display: "flex",
     padding: [theme.spacing(0.25), theme.spacing(1)],
   },
   filterNumberBoxSelected: {
-    backgroundColor: theme.palette.grey.light,
+    backgroundColor: theme.palette.secondary.light,
   },
   stickyContent: {
-    background: theme.palette.grey.light,
+    background: theme.palette.secondary.dark,
     position: "sticky",
     top: 0,
     zIndex: 1,
   },
   stickyContentBorder: {
-    borderBottom: `${theme.palette.grey.main} 1px solid`,
+    borderBottom: `${theme.palette.secondary.main} 1px solid`,
   },
 }));

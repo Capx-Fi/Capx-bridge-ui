@@ -13,6 +13,6 @@ export const useInfoBannerStyles = createUseStyles((theme: Theme) => ({
     width: "100%",
   },
   message: {
-    color: theme.palette.black,
+    color: theme.palette.white,
   },
 }));

@@ -41,7 +41,8 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
   },
   finaliseButton: {
     "&:disabled": {
-      backgroundColor: theme.palette.secondary.dark,
+      backgroundColor: theme.palette.secondary.veryLight,
+      color: theme.palette.white,
       cursor: "initial",
       opacity: 0.4,
     },
@@ -51,7 +52,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     backgroundColor: theme.palette.primary.main,
     border: "none",
     borderRadius: 32,
-    color: theme.palette.white,
+    color: theme.palette.secondary.dark,
     cursor: "pointer",
     fontWeight: 700,
     lineHeight: "20px",
@@ -94,7 +95,7 @@ export const useBridgeCardStyles = createUseStyles((theme: Theme) => ({
     padding: [theme.spacing(0.5), theme.spacing(1)],
   },
   steps: {
-    color: theme.palette.secondary.dark,
+    color: theme.palette.white,
     fontSize: 14,
     marginBottom: theme.spacing(2),
     marginTop: 0,
